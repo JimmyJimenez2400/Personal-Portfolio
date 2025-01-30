@@ -21,13 +21,13 @@ a{
 
 
 /* Layout */
-#container{
+.container{
     margin: 0 auto;
     width: 100%;
     
 }
 
-.container-flex{
+.container-flex, .hero{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +48,6 @@ a{
 
 
 .list-item{
-    flex: 1;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -147,6 +146,7 @@ a{
 }
 
 .education-title{
+    margin-top: 1em;
     text-align: center;
 }
 
@@ -164,6 +164,11 @@ a{
     display: flex;
     flex-direction: column;
     gap: 1em;
+    width: clamp(350px, 20%, 200px);
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 2em;
+
     .review-person-name{
         color: lightgrey;
     }
@@ -209,11 +214,19 @@ footer{
     content: '-';
     margin-right: 0.5em;
 }
+/* Media query - Desktop version */
 
-.review{
-    border: 1px solid black;
-    border-radius: 15px;
-    width: 20%;
-    padding: 2em 2em;
+@media (min-width: 1200px){
+    .container-flex{
+        width: 95%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border: 2px solid red;
+    }
+
+    .logo-name{
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
 }
-
