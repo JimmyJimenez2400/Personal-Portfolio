@@ -5,7 +5,7 @@
 }
 
 body{
-    
+
     font-size: 1rem;
 }
 
@@ -120,7 +120,7 @@ a{
     border: 1px solid black;
 }
 
-.experience{
+.experience, .open-sources, .education-jjay{
     align-self: stretch;
     display: flex;
     flex-direction: column;
@@ -128,9 +128,49 @@ a{
     gap: 1em;
     padding: 1em;
     align-items: flex-start;
+    border-bottom: 1px solid black;
 }
 
-.experience-title{
+.education-jjay{
+    background-color: white;
+}
+
+.source{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.education{
+    display: flex;
+    flex-direction: column;
+}
+
+.education-title{
+    text-align: center;
+}
+
+.main-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+}
+
+
+.review{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    .review-person-name{
+        color: lightgrey;
+    }
+}
+
+footer{
+    margin-top: 0.5em;
     padding: 1em 0;
 }
 
@@ -158,3 +198,22 @@ a{
     cursor: pointer;
     font-size: 1.1rem;
 }
+
+.source-link a{
+    color: blue;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.education-class::before{
+    content: '-';
+    margin-right: 0.5em;
+}
+
+.review{
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 20%;
+    padding: 2em 2em;
+}
+
