@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    padding: 1em;
+    font-size: 1rem;
+}
+
+ul, nav{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Layout */
+#container{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 900px;
+    
+}
+
+.container-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+
+
+.list-item{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item{
+    padding: 1em 0;
+    margin-left: 1em;
+}
+
+.main-top, .main-bottom{
+    align-self: stretch;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.project-title{
+    flex: 1;
+    text-align: center;
+    align-self: stretch;
+    border: 1px solid black;
+    padding: 0.5em 0;
+    margin: 0;
+}
+
+.projects-list{
+    align-self: stretch;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.project{
+    text-align: center;
+    align-self: stretch;
+    border: 1px solid black;
+    padding: 1em 0;
+    cursor: pointer;
+}
+
+.experience-opensource{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.work-experience{
+    align-self: stretch;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-heading{
+    align-self: stretch;
+    padding: 1em 0;
+    border: 1px solid black;
+}
+
+.experience{
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    gap: 1em;
+    padding: 1em;
+    align-items: flex-start;
+}
+
+.experience-title{
+    padding: 1em 0;
+}
+
+/* Typography */
+
+.item{
+    font-size: 1rem;
+}
+
+.item::after{
+    content: '/';
+    margin-left: 1em;
+}
+
+.item:last-child::after{
+    content: '';
+}
+
+.project{
+    background-color: lightgray;
+}
+
+.experience-link a{
+    color: blue;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
