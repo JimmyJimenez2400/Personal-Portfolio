@@ -6,7 +6,6 @@
 
 body{
     
-    padding: 1em;
     font-size: 1rem;
 }
 
@@ -24,8 +23,7 @@ a{
 /* Layout */
 #container{
     margin: 0 auto;
-    width: 90%;
-    max-width: 900px;
+    width: 100%;
     
 }
 
