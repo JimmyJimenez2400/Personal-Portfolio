@@ -31,6 +31,15 @@ a{
     align-items: center;
 }
 
+/* Desktop Media Query */
+@media (min-width: 1200px){
+    .header-flex{
+        width: 95%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
 .header-flex > *{
     margin-bottom: 1em;
 }
@@ -40,6 +49,13 @@ a{
     flex-direction: column;
     align-items: center;
     gap: 1em;
+}
+
+@media (min-width: 1200px){
+
+    .logo-name{
+        flex-direction: row;
+    }
 }
 
 nav{
@@ -56,10 +72,17 @@ nav{
     padding-bottom: 2em;
 }
 
+@media (min-width: 1200px){
+    .hero{
+        min-height: 50vh;
+    }
+}
+
 .main-flex{
     display: flex;
     flex-direction: column;
 }
+
 
 .projects{
     display: flex;
@@ -136,6 +159,44 @@ nav{
     gap: 1em;
 }
 
+@media (min-width: 1200px){
+    .main-flex{
+        
+        flex-direction: row;
+    }
+
+    .main-flex > *{
+        flex: 1;
+    }
+
+    .projects{
+        border: 1px solid black;
+    }
+
+    .projects-list > *{
+        flex: 1;
+    }
+
+    .projects-list:last-child{
+        flex: 2;
+    }
+
+    .experience-opensource{
+        flex: 2;
+    }
+
+    .work-experience{
+        flex: 1;
+    }
+
+    .open-sources{
+        flex: 2;
+    }
+
+
+}
+
+
 .reviews{
     display: flex;
     flex-direction: column;
@@ -209,4 +270,3 @@ nav{
     border-radius: 15px;
     padding: 1em;
 }
-
