@@ -5,7 +5,6 @@
 }
 
 body{
-
     font-size: 1rem;
 }
 
@@ -18,120 +17,104 @@ a{
     color: black;
 }
 
-
+/* Mobile-first approach below */
 
 /* Layout */
 .container{
     margin: 0 auto;
-    width: 100%;
-    
+    margin-top: 1em;
 }
 
-.container-flex, .hero{
+.header-flex{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.header-flex > *{
+    margin-bottom: 1em;
 }
 
 .logo-name{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    gap: 1em;
 }
 
-.hero{
-    margin-top: 1em;
-    margin-bottom: 2em;
-}
-
-
-
-.list-item{
+nav{
     display: flex;
-    justify-content: space-around;
+    gap: 1em;
     flex-wrap: wrap;
 }
 
-.item{
-    padding: 1em 0;
-    margin-left: 1em;
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 2em;
 }
 
-.main-top, .main-bottom{
-    align-self: stretch;
+.main-flex{
+    display: flex;
+    flex-direction: column;
 }
 
 .projects{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    border: 1px solid black;
 }
 
 .project-title{
-    flex: 1;
-    text-align: center;
+    font-size: 1.5rem;
+    padding: 1em 0;
     align-self: stretch;
-    border: 1px solid black;
-    padding: 0.5em 0;
-    margin: 0;
 }
 
 .projects-list{
-    align-self: stretch;
-    flex: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 0;
+    align-self: stretch;
 }
 
 .project{
-    text-align: center;
-    align-self: stretch;
-    border: 1px solid black;
     padding: 1em 0;
-    cursor: pointer;
+    align-self: stretch;
 }
 
 .experience-opensource{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
+    gap: 1em;
 }
 
 .work-experience{
-    align-self: stretch;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 1em;
 }
 
 .experience-heading{
-    align-self: stretch;
-    padding: 1em 0;
-    border: 1px solid black;
+    text-align: center;
+    border-top: 1px solid black;
+    padding-top: 0.5em;
 }
 
-.experience, .open-sources, .education-jjay{
-    align-self: stretch;
+.experience{
     display: flex;
     flex-direction: column;
-    background-color: lightgray;
     gap: 1em;
     padding: 1em;
-    align-items: flex-start;
-    border-bottom: 1px solid black;
 }
 
-.education-jjay{
-    background-color: white;
+.open-sources{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
 }
 
 .source{
@@ -143,90 +126,87 @@ a{
 .education{
     display: flex;
     flex-direction: column;
-}
-
-.education-title{
-    margin-top: 1em;
-    text-align: center;
-}
-
-.main-bottom{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 1em;
     gap: 1em;
 }
 
-
-.review{
-    flex: 1;
+.education-jjay{
     display: flex;
     flex-direction: column;
     gap: 1em;
-    width: clamp(350px, 20%, 200px);
-    border: 1px solid black;
-    border-radius: 15px;
-    padding: 2em;
-
-    .review-person-name{
-        color: lightgrey;
-    }
 }
 
-footer{
-    margin-top: 0.5em;
-    padding: 1em 0;
+.reviews{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.review-title{
+    margin-bottom: 1em;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.footer-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1em;
 }
 
 /* Typography */
 
-.item{
-    font-size: 1rem;
-}
+
 
 .item::after{
     content: '/';
-    margin-left: 1em;
+    margin-left: 0.5em;
 }
 
 .item:last-child::after{
     content: '';
 }
 
-.project{
-    background-color: lightgray;
+.project-title{
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+.project {
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.experience{
+    border: 1px solid black;
+}
+
+.open-sources, .education{
+    border-bottom: 1px solid black;
 }
 
 .experience-link a{
-    color: blue;
-    cursor: pointer;
-    font-size: 1.1rem;
+    color : blue;
 }
 
 .source-link a{
     color: blue;
-    cursor: pointer;
-    font-size: 1.1rem;
 }
 
-.education-class::before{
-    content: '-';
-    margin-right: 0.5em;
+.review-title{
+    font-size: 1.9rem;
 }
-/* Media query - Desktop version */
 
-@media (min-width: 1200px){
-    .container-flex{
-        width: 95%;
-        flex-direction: row;
-        justify-content: space-evenly;
-        border: 2px solid red;
-    }
-
-    .logo-name{
-        display: flex;
-        flex-direction: row;
-        gap: 1em;
-    }
+.review{
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 1em;
 }
+
