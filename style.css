@@ -1,18 +1,19 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-size: 1rem;
 }
 
-ul, nav{
+ul,
+nav {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
@@ -20,51 +21,35 @@ a{
 /* Mobile-first approach below */
 
 /* Layout */
-.container{
+.container {
     margin: 0 auto;
     margin-top: 1em;
 }
 
-.header-flex{
+.header-flex {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Desktop Media Query */
-@media (min-width: 1200px){
-    .header-flex{
-        width: 95%;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-.header-flex > *{
+.header-flex>* {
     margin-bottom: 1em;
 }
 
-.logo-name{
+.logo-name {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1em;
 }
 
-@media (min-width: 1200px){
-
-    .logo-name{
-        flex-direction: row;
-    }
-}
-
-nav{
+nav {
     display: flex;
     gap: 1em;
     flex-wrap: wrap;
 }
 
-.hero{
+.hero {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,148 +57,23 @@ nav{
     padding-bottom: 2em;
 }
 
-@media (min-width: 1200px){
-    .hero{
-        min-height: 50vh;
-    }
-}
-
-.main-flex{
-    display: flex;
-    flex-direction: column;
-}
-
-
-.projects{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.project-title{
-    font-size: 1.5rem;
-    padding: 1em 0;
-    align-self: stretch;
-}
-
-.projects-list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: stretch;
-}
-
-.project{
-    padding: 1em 0;
-    align-self: stretch;
-}
-
-.experience-opensource{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-.work-experience{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-.experience-heading{
-    text-align: center;
-    border-top: 1px solid black;
-    padding-top: 0.5em;
-}
-
-.experience{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    padding: 1em;
-}
-
-.open-sources{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    padding: 1em;
-}
-
-.source{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-.education{
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-    gap: 1em;
-}
-
-.education-jjay{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-@media (min-width: 1200px){
-    .main-flex{
-        
-        flex-direction: row;
-    }
-
-    .main-flex > *{
-        flex: 1;
-    }
-
-    .projects{
-        border: 1px solid black;
-    }
-
-    .projects-list > *{
-        flex: 1;
-    }
-
-    .projects-list:last-child{
-        flex: 2;
-    }
-
-    .experience-opensource{
-        flex: 2;
-    }
-
-    .work-experience{
-        flex: 1;
-    }
-
-    .open-sources{
-        flex: 2;
-    }
-
-
-}
-
-
-.reviews{
+.reviews {
     display: flex;
     flex-direction: column;
     padding: 1em;
 }
 
-.review-title{
+.review-title {
     margin-bottom: 1em;
 }
 
-.review{
+.review {
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
-.footer-flex{
+.footer-flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -221,20 +81,166 @@ nav{
     padding-bottom: 1em;
 }
 
+.main-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    padding: 1em 0;
+    align-self: stretch;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+}
+
+.project {
+    padding: 1em 0;
+    align-self: stretch;
+}
+
+.experience-opensource {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.work-experience {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.experience-heading {
+    text-align: center;
+    border-top: 1px solid black;
+    padding-top: 0.5em;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+.open-sources {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+.source {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+}
+
+.education-jjay {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.review-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+@media (min-width: 900px) {
+    .header-flex {
+        width: 95%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo-name {
+        flex-direction: row;
+    }
+
+    .hero {
+        min-height: 50vh;
+    }
+
+    .main-flex {
+
+        flex-direction: row;
+    }
+
+    .main-flex>* {
+        flex: 1;
+    }
+
+    .projects {
+        border: 1px solid black;
+    }
+
+    .projects-list>* {
+        flex: 1;
+    }
+
+    .projects-list:last-child {
+        flex: 2;
+    }
+
+    .experience-opensource {
+        flex: 2;
+    }
+
+    .work-experience {
+        flex: 1;
+    }
+
+    .open-sources {
+        flex: 2;
+    }
+
+    .review-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .review {
+        width: 200px;
+    }
+
+}
+
 /* Typography */
 
 
 
-.item::after{
+.item::after {
     content: '/';
     margin-left: 0.5em;
 }
 
-.item:last-child::after{
+.item:last-child::after {
     content: '';
 }
 
-.project-title{
+.project-title {
     border-top: 1px solid black;
     text-align: center;
 }
@@ -245,27 +251,28 @@ nav{
     border-bottom: 1px solid black;
 }
 
-.experience{
+.experience {
     border: 1px solid black;
 }
 
-.open-sources, .education{
+.open-sources,
+.education {
     border-bottom: 1px solid black;
 }
 
-.experience-link a{
-    color : blue;
-}
-
-.source-link a{
+.experience-link a {
     color: blue;
 }
 
-.review-title{
+.source-link a {
+    color: blue;
+}
+
+.review-title {
     font-size: 1.9rem;
 }
 
-.review{
+.review {
     border: 2px solid black;
     border-radius: 15px;
     padding: 1em;
