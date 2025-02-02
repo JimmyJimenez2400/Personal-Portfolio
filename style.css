@@ -168,64 +168,7 @@ nav {
     gap: 1em;
 }
 
-@media (min-width: 900px) {
-    .header-flex {
-        width: 95%;
-        flex-direction: row;
-        justify-content: space-between;
-    }
 
-    .logo-name {
-        flex-direction: row;
-    }
-
-    .hero {
-        min-height: 50vh;
-    }
-
-    .main-flex {
-
-        flex-direction: row;
-    }
-
-    .main-flex>* {
-        flex: 1;
-    }
-
-    .projects {
-        border: 1px solid black;
-    }
-
-    .projects-list>* {
-        flex: 1;
-    }
-
-    .projects-list:last-child {
-        flex: 2;
-    }
-
-    .experience-opensource {
-        flex: 2;
-    }
-
-    .work-experience {
-        flex: 1;
-    }
-
-    .open-sources {
-        flex: 2;
-    }
-
-    .review-container {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .review {
-        width: 200px;
-    }
-
-}
 
 /* Typography */
 
@@ -276,4 +219,87 @@ nav {
     border: 2px solid black;
     border-radius: 15px;
     padding: 1em;
+}
+
+@media (min-width: 900px) {
+    .header-flex {
+        width: 95%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo-name {
+        flex-direction: row;
+    }
+
+    .hero {
+        min-height: 50vh;
+    }
+
+    .main-flex {
+
+        flex-direction: row;
+    }
+
+    .main-flex>* {
+        flex: 1;
+    }
+
+    .projects {
+        border: 1px solid black;
+    }
+
+    .project-title{
+        text-align: start;
+        padding-left: 1em;
+    }
+
+    .projects-list>* {
+        text-align: start;
+        flex: 1;
+        padding-left: 1em;
+    }
+
+    .projects-list:last-child {
+        flex: 2;
+    }
+
+    .experience-opensource {
+        flex: 2;
+    }
+
+    .work-experience {
+        flex: 1;
+    }
+
+    .open-sources {
+        flex: 2;
+    }
+
+    .review-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .review {
+        width: clamp(400px, 10%, 900px);
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .education{
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+    }
+
+    .experience-heading{
+        text-align: start;
+        padding-left: 0.5em;
+    }
+    .experience{
+        border-bottom: 1px solid black;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+    }
 }
